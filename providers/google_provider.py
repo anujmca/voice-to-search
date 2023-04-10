@@ -12,7 +12,7 @@ class GoogleProvider:
 
     @staticmethod
     def initialize():
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "VoiceSearch-0f0d55cb68a9.json"
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Projects\\RBS\\voice-to-search\\providers\\VoiceSearch-0f0d55cb68a9.json"
 
     @staticmethod
     def translate_uri(uri) -> speech.RecognizeResponse:

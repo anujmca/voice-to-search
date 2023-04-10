@@ -1,4 +1,4 @@
-from google_provider import *
+from providers.google_provider import *
 from common import *
 
 

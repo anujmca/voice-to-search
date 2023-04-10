@@ -4,12 +4,13 @@ from google.cloud import speech_v1p1beta1 as speech
 
 from common import TwoChannelToMono
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "VoiceSearch-0f0d55cb68a9.json"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "VoiceSearch-0f0d55cb68a9.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Projects\\RBS\\voice-to-search\\providers\\VoiceSearch-0f0d55cb68a9.json"
 client = speech.SpeechClient()
 
 # The name of the audio file to transcribe
-file_name = "C:\\Projects\\RBS\\voice-to-search\\voice-files\\volleyball-convo-94227.wav"
-mono_file_name = "C:\\Projects\\RBS\\voice-to-search\\voice-files\\volleyball-convo-94227_mono.wav"
+file_name = "/voice-files/volleyball-convo-94227.wav"
+mono_file_name =  "../voice-files/volleyball-convo-94227_mono.wav"
 # TwoChannelToMono.convert(file_name, mono_file_name)
 
 

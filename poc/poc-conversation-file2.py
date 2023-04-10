@@ -1,10 +1,10 @@
 import os
 from google.cloud import speech_v1p1beta1 as speech
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "VoiceSearch-0f0d55cb68a9.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "../providers/VoiceSearch-0f0d55cb68a9.json"
 client = speech.SpeechClient()
 
-speech_file = "C:\\Projects\\RBS\\voice-to-search\\voice-files\\speech_snippets_resources_commercial_mono.wav"
+speech_file = "../voice-files/spoofing-trader-conversation.wav"
 
 with open(speech_file, "rb") as audio_file:
     content = audio_file.read()
